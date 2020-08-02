@@ -1,15 +1,7 @@
 ---
 title: "Statistical Inference for inter-arrival times of extreme events in bursty time series"
 # titlerunning: "CTRE: POT for Bursty Time Series"
-thanks: |
-    Peter Straka was supported by the 
-    Discovery Early Career Research Award DE160101147 on the Project 
-    "Predicting Extremes when Events Occur in Bursts" by the Australian
-    Research Council.
-    Katharina Hees was supported by 
-    the DAAD co-financed by the German Federal Ministry of Education and 
-    Research (BMBF). 
-   
+
 author: 
 
 - name: "Katharina Hees"
@@ -331,8 +323,8 @@ For a detailed reference on the Mittag-Leffler distribution, see e.g.
 
 **Remark:**
 
-: If $\beta = 1$, the result of the Theorem above is standard, see  
-Equation (2.2) in @Gut1999. In @Anderson1987  a similar result is shown with a different choice of scaling constant. [@MeerschaertStoev08] proved a limit theorem for the maxima of iid random variables separated by infinite mean waiting times. They have also shown that the hitting time of the limit process is Mittag-Leffler distributed. [@Basrak2014] described the asymptotic distribution, under similar assumptions, of all upper orders statistics using point processes.   
+: If $\beta = 1$, the result of the Theorem above is standard, see
+Equation (2.2) in @Gut1999. In @Anderson1987  a similar result is shown with a different choice of scaling constant. @MeerschaertStoev08 proved a limit theorem for the maxima of iid random variables separated by infinite mean waiting times. They also show that the hitting time of the limit process is Mittag-Leffler distributed. @Basrak2014 describe the asymptotic distribution, under similar assumptions, of all upper orders statistics of the maximum process using point processes.   
 
 **Remark:**
 
@@ -975,15 +967,16 @@ reverting to an exponential distribution) at very long time scales [see e.g. @Me
 
 # Acknowledgements {-}
 
-The authors would like to thank Prof. Peter Scheffler for insights on 
-stochastic process limits for CTRMs, Prof. Roland Fried for discussion 
-regarding the statistical methods and Gurtek Gill who helped create the 
-MittagLeffleR R-package. Peter Straka was supported by the Discovery 
+Peter Straka was supported by the Discovery 
 Early Career Research Award DE160101147 on the Project 
 “Predicting Extremes when Events Occurin Bursts” by 
 the Australian Research Council. Katharina Hees was 
 supported by the DAAD co-financed by the 
 German Federal Ministry of Education and Research (BMBF).
+The authors would like to thank Prof. Peter Scheffler for insights on 
+stochastic process limits for CTRMs, Prof. Roland Fried for discussion 
+regarding the statistical methods and Gurtek Gill who helped create the 
+MittagLeffleR R-package. 
 
 
 \newpage
