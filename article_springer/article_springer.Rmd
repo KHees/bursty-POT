@@ -96,7 +96,8 @@ knitr::opts_chunk$set(
   echo = FALSE,
   cache = TRUE,
   message = FALSE,
-  fig.height = 3, out.width = '\\textwidth'
+  fig.height = 3, out.width = '\\textwidth',
+  dev='postscript'
   )
 library(CTRE)
 library(MittagLeffleR)
@@ -955,8 +956,7 @@ The Mittag-Leffler distribution captures both phenomena, due to its heavy tail a
 
 When we introduced the CTRE model, we assumed that all events are iid. This assumption is likely sufficient but not necessary for our limit theorem to hold. Moreover, any data below a (minimum) threshold $\ell_0$ is discarded for CTREs, and hence need not satisfy the iid assumption. For the purposes of statistical inference, we merely require that the IETs are iid.
 
-The CTRE approach to model "non-Poissonian" threshold crossing times should be contrasted with the well-documented approach of clusters of extremes, see e.g. @ferro2003inference. When the underlying stochastic process is *stationary*, the exceedances of high thresholds form, asymptotically, a *Cluster Poisson Process*.
-In the setting of this article, however, clustering-like dynamics occur due to the *non-stationarity* of the underlying renewal-reward process, which has infinite-mean renewal times. 
+The CTRE approach to model "non-Poissonian" threshold crossing times should be contrasted with the well-documented approach of clusters of extremes, see e.g. @ferro2003inference. When the underlying stochastic process is *stationary*, the exceedances of high thresholds form, asymptotically, a *Cluster Poisson Process*. This result was established in [@Hsing88]. In the setting of this article, however, clustering-like dynamics occur due to the *non-stationarity* of the underlying renewal-reward process, which has infinite-mean renewal times. 
 Hence CTRE and Cluster Poisson Process should not be viewed as competing methods, as the underlying data generating processes are quite different. To differentiate between the two models we use the term *bursty* which is standard in the context of heavy-tailed inter-arrival times in the physics community [e.g. @Barabasi2005;@Vasquez2006;@Karsai2012;@Vajna2013]). In weighing the evidence for either of the two data generating processes, criteria could be developed, based e.g. on measures of surprise [@Lee15], which may prove to be valuable for future applied statisticians.
 
 Finally, we note that assuming a purely scale-free pattern for event times may be too rigid an 
