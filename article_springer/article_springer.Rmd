@@ -45,9 +45,7 @@ abstract: |
   inter-arrival times between events such as solar flares, trades and 
   neuron voltages follow a heavy-tailed distribution. The set of event times is fractal-like, 
   being dense in some time windows and empty in others, a phenomenon which has been dubbed 
-  "bursty". 
-  
-  A new model for the _inter-exceedance times_ of events 
+  "bursty". A new model for the _inter-exceedance times_ of such events 
   above high thresholds is proposed. For high thresholds and 
   infinite-mean waiting times, it is shown that the times between threshold 
   crossings are Mittag-Leffler distributed, and thus form a "fractional 
@@ -238,7 +236,7 @@ _without any_ events, whereas in the real-world dataset events appear continuous
 
 ## Scaling limit of Exceedance Times {#sec:scaling}
 
-In this section we state and prove the key theorem, which is founded on the concept of regular variation. A Borel-measurable function $f:\mathbb (0,\infty) \to (0,\infty)$ is said be "regularly varying at $\infty$ with parameter (or "index") $\rho$ if 
+In this section we state and prove the key theorem, which is founded on the concept of regular variation. A Borel-measurable function $f:\mathbb (0,\infty) \to (0,\infty)$ is said be "regularly varying" at $\infty$ with parameter (or "index") $\rho$ if 
 
 $$
 \lim_{x \to \infty} \frac{f(\lambda x)}{f(x)} = \lambda^\rho \quad \text{ for all } \lambda > 0.
