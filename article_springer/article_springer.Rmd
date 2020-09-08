@@ -941,8 +941,7 @@ right panel).
 
 # Discussion & Conclusion
 
-We have applied the POT (Peaks-over-Threshold) model, a mainstay of extreme value theory, to "bursty" time series, which have been studied 
-intensively in statistical physics. Burstiness is characterized by power-law waiting times between events, and we have shown that the Mittag-Leffler distribution arises naturally as a scaling limit for the inter-exceedance times of high thresholds. Moreover, we have derived the following non-linear scaling behaviour: $\sigma \sim p_{\ell}^{-1/\beta}$, where $\sigma$ is the scale parameter of the distribution of threshold 
+We proposed a new model and inference procedure for the inter-exceedance times of "bursty" time series, which have been studied intensively in statistical physics. Burstiness is characterized by power-law waiting times between events, and we have shown that the Mittag-Leffler distribution arises naturally as a scaling limit for the inter-exceedance times of high thresholds. Moreover, we have derived the following non-linear scaling behaviour: $\sigma \sim p_{\ell}^{-1/\beta}$, where $\sigma$ is the scale parameter of the distribution of threshold 
 exceedance times, $p_{\ell}$ is the fraction of magnitudes above the threshold $\ell$, and $\beta$ the exponent of the power law. 
 This "anomalous" scaling behaviour in the bursty setting entails two phenomena: 
 
