@@ -114,7 +114,7 @@ Time series displaying temporally inhomogeneous behaviour in terms of the occurr
 Such time series exhibit high activity in some 'bursty' intervals, which 
 alternate with other, quiet intervals.  Although several mechanisms are 
 plausible explanations for bursty behaviour (most prominently self-exciting
-point process by @hawkes1971point), there seems to be one salient feature 
+point process by @hawkes1971point and renewal Hawkes processes, e.g. @wheatley2016hawkes, @stindl2018likelihood), there seems to be one salient feature 
 which very typically indicates the departure from temporal homogeneity: a 
 heavy-tailed distribution of waiting times [@Vasquez2006; @Karsai2012; 
 @Vajna2013]. As we show below in simulations, a simple renewal process with
