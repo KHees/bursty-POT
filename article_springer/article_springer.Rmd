@@ -174,12 +174,20 @@ manuscript is available online at <https://github.com/strakaps/bursty-POT>.
 
 ## Continuous Time Random Exceedances (CTRE) {#sec:CTRE}
 
+A Borel-measurable function $f:\mathbb (0,\infty) \to (0,\infty)$ is said be "regularly varying" at $\infty$ with parameter (or "index") $\rho$ if 
+
+$$
+\lim_{x \to \infty} \frac{f(\lambda x)}{f(x)} = \lambda^\rho \quad \text{ for all } \lambda > 0.
+$$
+
+For more details on regular variation and stable limit theorems, we recommend the book by @MeerschaertSikorskii.
+
 As a model for extreme observations, we use a Marked Renewal Process (MRP):
 
 **Definition (MRP):** 
 
 : Let $(W,J), (W_1, J_1), (W_2, J_2), \ldots$ be iid pairs of random variables, where the $W_k > 0$ are interpreted as the *waiting times* 
-and $J_k \in \mathbb{R}$ as the *event magnitudes*. If $W$ and $J$ are independent, the Marked Renewal Process is said to be *uncoupled*. 
+and $J_k \in \mathbb{R}$ as the *event magnitudes*. If $W$ and $J$ are independent, the Marked Renewal Process is said to be *uncoupled*. We call the MRP *bursty*, if the tail function $F_W(x)=P(W>t)$ is regularly varying with index $0<\beta<1$.
 
 
 In the following we denote with $x_L \in [-\infty, +\infty)$ and $x_R \in (-\infty, +\infty]$ the left and right endpoint of the distribution of $J$. We assume that the $k$-th magnitude $J_k$ occurs at time
@@ -201,7 +209,7 @@ called the "inter-exceedance times" (IETs) and the "exceedances", respectively.
 The pair sequence $(X(\ell, n), T(\ell, n))_{n \in \mathbb N}$ is called 
 a Continuous Time Random Exceedance model (CTRE). 
 If the underlying MRP is uncoupled, then the CTRE is also called 
-uncoupled. 
+uncoupled. We call the CTRE *bursty*, if the tail function of the IETs is regularly varying with an index $0<\beta<1$.
 
 
 ```{r thresholdedBursty, message=FALSE, fig.height=6, fig.width=7,out.width='70%',fig.align='center',fig.cap="\\label{fig:thresholdedBursty} Exceedances (red) and times until Exceedance (durations between blue crosses) for a given threshold $\\ell$ (dashed line). Upper picture: Simulated data with stable distributed waiting times. Lower picture: Solar flares during 1982."}
@@ -236,13 +244,7 @@ _without any_ events, whereas in the real-world dataset events appear continuous
 
 ## Scaling limit of Exceedance Times {#sec:scaling}
 
-In this section we state and prove the key theorem, which is founded on the concept of regular variation. A Borel-measurable function $f:\mathbb (0,\infty) \to (0,\infty)$ is said be "regularly varying" at $\infty$ with parameter (or "index") $\rho$ if 
-
-$$
-\lim_{x \to \infty} \frac{f(\lambda x)}{f(x)} = \lambda^\rho \quad \text{ for all } \lambda > 0.
-$$
-
-For more details on regular variation and stable limit theorems, we recommend the book by @MeerschaertSikorskii.
+In this section we state and prove the key theorem, which is founded on the concept of regular variation. 
 
 **Theorem:** 
 
